@@ -1,20 +1,29 @@
-$main-font: 'Noto Sans JP', sans-serif;
+$main-font: "Noto Sans JP", sans-serif;
 
 body {
     font-family: $main-font;
 }
 .main-area {
-    background-image: linear-gradient(90deg, #bdbdbd 3.57%, #ffffff 3.57%, #ffffff 50%, #bdbdbd 50%, #bdbdbd 53.57%, #ffffff 53.57%, #ffffff 100%);
-  background-size: 28.00px 28.00px;
+    background-image: linear-gradient(
+        90deg,
+        #bdbdbd 3.57%,
+        #ffffff 3.57%,
+        #ffffff 50%,
+        #bdbdbd 50%,
+        #bdbdbd 53.57%,
+        #ffffff 53.57%,
+        #ffffff 100%
+    );
+    background-size: 28px 28px;
     h1 {
         font-size: 2.5em;
     }
     h2.title {
         font-size: 3em;
         font-weight: bold;
-        color:#fff;
+        color: #fff;
         -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 1px 3px 6px rgba($color: #000000, $alpha: 0.3);
+        -webkit-text-stroke-color: black;
+        text-shadow: 1px 3px 6px rgba($color: #000000, $alpha: 0.3);
     }
 }
