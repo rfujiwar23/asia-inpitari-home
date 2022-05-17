@@ -37,7 +37,15 @@ body {
 .section-03 {
   h1 {
     rt {
-      font-size: 12px;
+      font-size: 10px;
+    }
+  }
+}
+
+.section-04 {
+  h2 {
+    span {
+      background:red;
     }
   }
 }
