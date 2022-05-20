@@ -6,6 +6,10 @@ body {
   display: none;
 }
 
+.phone {
+  display: none;
+}
+
 .main-area {
   background-image: linear-gradient(90deg, #bdbdbd 3.57%, #ffffff 3.57%, #ffffff 50%, #bdbdbd 50%, #bdbdbd 53.57%, #ffffff 53.57%, #ffffff 100%);
   background-size: 28px 28px;
@@ -23,12 +27,29 @@ body {
   text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+.section-02 {
+  background-image: linear-gradient(90deg, #bdbdbd 3.57%, #ffffff 3.57%, #ffffff 50%, #bdbdbd 50%, #bdbdbd 53.57%, #ffffff 53.57%, #ffffff 100%);
+  background-size: 28px 28px;
+}
+.section-02 .middle-text i {
+  font-size: 3em;
+  padding-top: 2vh;
+}
+.section-02 .gradient {
+  background: white;
+  background: linear-gradient(180deg, white 40%, #4d4d4d 100%);
+}
+
 .section-03 h1 rt {
   font-size: 10px;
 }
 
-.section-04 h2 span {
-  background: red;
+.section-05 h2 {
+  line-height: 2em;
+}
+.section-05 h2 span {
+  font-size: 0.8em;
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -39,6 +60,21 @@ body {
   .main-area h2.title {
     font-size: 2em;
     line-height: 1.5em;
+  }
+
+  .section-03 .stepsArea {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .phone {
+    display: block;
+  }
+
+  .pc {
+    display: none;
   }
 }
 @media screen and (max-width: 400px) {
