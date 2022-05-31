@@ -35,7 +35,7 @@
               <h2 class="font-bold text-xl mb-2">ABOUT 01</h2>
 
           </div> -->
-      <div class="flex md:flex-row-reverse flex-wrap mb-5">
+      <!-- <div class="flex md:flex-row-reverse flex-wrap mb-5">
         <div class="w-full md:w-3/5 px-3 py-8 text-slate-900 shadow-2xl border-2 border-lime-700 rounded-lg bg-white">
           <h2 class="font-bold text-xl mb-2 text-center">
             <span class="border-double border-4 border-black p-2">ABOUT 01</span>
@@ -45,15 +45,12 @@
           <p class="leading-8 py-3 px-5">サロンメニュー「<ruby>ASIA<rt>アジア</rt></ruby> <ruby>INPITARI<rt>インピタリ</rt></ruby> トリートメント」専用のご自宅用集中ケアマスクです。週2回にご使用いただくことで、最大4週間の効果の持続を実感できます。</p>
         </div>
         <div class="w-full md:w-2/5">
-          <!-- 2 -->
-
         </div>
       </div>
 
       <div class="flex md:flex-row-reverse flex-wrap mb-5">
 
         <div class="w-full md:w-2/5">
-          <!-- 2 -->
         </div>
         <div class="w-full md:w-3/5 px-3 py-8 text-slate-900 shadow-2xl rounded-lg bg-white border-2 border-teal-400">
           <h2 class="font-bold text-xl mb-2 text-center">
@@ -76,9 +73,9 @@
           <p class="leading-8 py-3 px-5">サロントリートメントで瞬間吸着させた補修成分と保湿成分を補いながら、インカラミ効果と手触りの持続をサポートします。</p>
         </div>
         <div class="w-full md:w-2/5">
-          <!-- 2 -->
         </div>
-      </div>
+      </div> -->
+
     </div>
   </div>
   <div class="section-01 py-12">
@@ -97,7 +94,7 @@
         <div class="flex" v-for="characteristic in characteristics">
           <div :class="'bg-' + characteristic.backgroundColor + '-50'" class="asia-col my-2 py-3 px-2 sm:w-full w-4/5 mx-auto shadow-2xl rounded-md">
             <div class="bg-blue">
-              <img :src="characteristic.image" :alt="characteristic.titleText" class="mx-auto mb-5" style="border-radius: 50%;">
+              <img :src="characteristic.image" :alt="characteristic.titleText" class="mx-auto mb-5" style="border-radius: 50%; height: 150px; width:150px;">
             </div>
             <h4 class="text-center mb-5 text-lg underline underline-offset-8 decoration-2 decoration-indigo-asiua">{{characteristic.titleText}}
             </h4>
@@ -115,7 +112,7 @@
     <div class="py-2 px-3 lg:w-3/4 md:w-5/6 sm:w-5/6 w-5/6 mx-auto">
       <div class="grid sm:grid-cols-8">
         <div class="px-1 m-2 lg:col-span-4 md:col-span-4 sm:col-start-2 col-span-6 my-auto">
-          <img src="https://dummyimage.com/600x400/527de3/fff.png&text=ASIA+INPITARI+IMAGE" alt="ASIA インピタリ"
+          <img src="assets/images/image.png" alt="ASIA インピタリ"
             class="img-fluid">
         </div>
 
@@ -127,6 +124,8 @@
         </div>
       </div>
     </div>
+
+
 
 
 
@@ -157,7 +156,7 @@
               </ul>
             </div>
             <div class="px-1 m-2 lg:col-span-4 md:col-span-4 sm:col-start-2 col-span-6 my-auto">
-              <img src="https://dummyimage.com/600x400/527de3/fff.png&text=ASIA+INPITARI+IMAGE" alt="ASIA インピタリ"
+              <img src="assets/images/image2.jpg" alt="ASIA インピタリ"
                 class="img-fluid">
             </div>
         </div>
@@ -223,7 +222,7 @@
       <rt class="text-cyan-600">ホーム</rt></ruby></span></h3>
     <div class="container mx-auto">
       <div class="w-11/12 mx-auto my-5">
-        <div class="grid lg:grid-cols-4 sm:grid-cols-2 px-5" id="steps">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-3 px-5" id="steps">
           <div v-for="step in steps2use" class="flex stepsArea">
             <div :class="'bg-' + step.backgroundColor + '-50'" class="md:flex-1 py-4 px-2 m-2 relative rounded shadow-lg border-b border-r border-grey-dark">
               <div class="steps mb-3 -rotate-45 absolute top-2 -left-2">
@@ -237,16 +236,16 @@
       </div>
     </div>
     <h4 class="text-center mt-10 mb-8">いつものトリートメントの代わりに<br class="break-on-mobile">後は乾かすだけ!!</h4>
-    <div class="container mx-auto">
-      <div class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 px-5">
-        <div class="p-1 place-content-center"><img src="https://dummyimage.com/300x200/a17ca1/fff.png&text=After+Image" alt=""
+    <div class="container md:w-2/3 mx-auto">
+      <div class="grid md:grid-cols-2 sm:grid-cols-2 grid-cols-2 px-5">
+        <div class="p-1 place-content-center"><img src="assets/images/before-after-1.jpg" alt=""
+            class="img-fluid rounded-lg"></div>
+        <div class="p-1 place-content-center"><img src="assets/images/before-after-2.jpg" alt=""
+            class="img-fluid rounded-lg"></div>
+        <!-- <div class="p-1 place-content-center"><img src="https://dummyimage.com/300x200/a17ca1/fff.png&text=After+Image" alt=""
             class="img-fluid rounded-lg"></div>
         <div class="p-1 place-content-center"><img src="https://dummyimage.com/300x200/a17ca1/fff.png&text=After+Image" alt=""
-            class="img-fluid rounded-lg"></div>
-        <div class="p-1 place-content-center"><img src="https://dummyimage.com/300x200/a17ca1/fff.png&text=After+Image" alt=""
-            class="img-fluid rounded-lg"></div>
-        <div class="p-1 place-content-center"><img src="https://dummyimage.com/300x200/a17ca1/fff.png&text=After+Image" alt=""
-            class="img-fluid rounded-lg"></div>
+            class="img-fluid rounded-lg"></div> -->
       </div>
     </div>
   </div>
@@ -310,7 +309,7 @@
     <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://ifing-beauty.com"
         class="hover:underline">IFING BEAUTY</a> All Rights Reserved.
     </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+    <!-- <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>
         <a href="#" class="mr-4 hover:underline md:mr-6 ">会社概要</a>
       </li>
@@ -320,7 +319,7 @@
       <li>
         <a href="#" class="hover:underline">お問合せ</a>
       </li>
-    </ul>
+    </ul> -->
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
